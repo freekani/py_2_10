@@ -17,9 +17,9 @@ int main(int argc, char const *argv[])
         b = b1;
         t = t1;
         p = p1;
+        cout << (a + b) * (a + b) / 4.0 / t << endl;
     }
 
-    cout << (a + b) * (a + b) / 4.0 / t;
     /* code */
     return 0;
 }
