@@ -19,8 +19,8 @@ int main(int argc, char const *argv[])
         t = t1;
         p = p1;
 
-        //cout << fixed << a << " " << b << " " << t << " " << p << " " << (a + b) * (a + b) / 4.0 / t << endl;
-        printf("%.300lf\n", (a + b) * (a + b) / 4.0 / t);
+        cout << setprecision(200)<< a << " " << b << " " << t << " " << p << " " << (a + b) * (a + b) / 4.0 / t << endl;
+        
     }
 
     /* code */
