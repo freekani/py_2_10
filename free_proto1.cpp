@@ -2,6 +2,8 @@
 #include <math.h>
 using namespace std;
 int main(int argc, char const *argv[])
+{
+    double a = 1, b = 1.0 / sqrt(2.0), t = 0.25, p = 1;
     double a1 = 1, b1 = 1.0 / sqrt(2.0), t1 = 0.25, p1 = 1;
 
     for (int i = 0; i < 10; i++)
