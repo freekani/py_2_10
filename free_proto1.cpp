@@ -3,15 +3,15 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    double a = 1, b = 1.0 / sqrt(2.0), t = 0.25, p = 1;
-    double a1 = 1, b1 = 1.0 / sqrt(2.0), t1 = 0.25, p1 = 1;
+    double a = 1.0, b = 1.0 / sqrt(2.0), t = 0.25, p = 1.0;
+    double a1 = 1.0, b1 = 1.0 / sqrt(2.0), t1 = 0.25, p1 = 1.0;
 
     for (int i = 0; i < 10; i++)
     {
-        a1 = (a + b) / 2;
+        a1 = (a + b) / 2.0;
         b1 = sqrt(a * b);
         t1 = t - p * (a - a1) * (a - a1);
-        p1 = 2 * p;
+        p1 = 2.0 * p;
 
         a = a1;
         b = b1;
@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         p = p1;
     }
 
-    cout << (a + b) * (a + b) / 4 / t;
+    cout << (a + b) * (a + b) / 4.0 / t;
     /* code */
     return 0;
 }
