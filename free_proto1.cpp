@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
         p = p1;
         //cout<<fixed;
         //これを入れると未計算の桁が0埋めされる
-        cout << setprecision(200) //桁数はiomanipで指定してるよ
+        cout << setprecision(200) //桁数の指定
              << a << " " << b << " " << t << " " << p << " " << (a + b) * (a + b) / 4.0 / t << endl;
         //答えを求める公式(a + b) * (a + b) / 4.0 / t
     }
