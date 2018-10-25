@@ -4,8 +4,8 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    double a = 1.0, b = sqrt(2.0) / 2.0, t = 0.25, p = 1.0;
-    double a1 = 1.0, b1 = 1.0 / sqrt(2.0) / 2.0, t1 = 0.25, p1 = 1.0;
+    double a = 1.0, b = sqrt(2.0) / 2.0, t = 0.25, p = 1.0;           //ガウス・ルジャンドル法の初期値
+    double a1 = 1.0, b1 = 1.0 / sqrt(2.0) / 2.0, t1 = 0.25, p1 = 1.0; //上の変数コピペしただけで実はこの初期化いらない
 
     for (int i = 0; i < 10; i++)
     {
