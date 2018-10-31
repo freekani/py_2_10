@@ -10,12 +10,8 @@ p1 = 1.0
 for i in range(4):
     a1 = (a + b) / 2.0
     b1 = math.sqrt(a * b)
-
     t1 = t - p * (a - a1) * (a - a1)
-
     p1 = 2.0 * p
-
-
 
     a = a1
     b = b1
