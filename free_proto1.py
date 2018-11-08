@@ -1,18 +1,21 @@
-import math
-a = 1.0
-b = math.sqrt(2.0) / 2.0
-t = 0.25
-p = 1.0
+from decimal import *
+getcontext().prec = 1000
 
-for i in range(4):
-    a1 = (a + b) / 2.0
-    b1 = math.sqrt(a * b)
-    t1 = t - p * (a - a1) **2
-    p1 = 2.0 * p
+
+a = Decimal(1.0)
+b = Decimal(2.0).sqrt() / Decimal(2.0)
+t = Decimal(0.25)
+p = Decimal(1.0)
+
+for i in range(5):
+    a1 = (a + b) / Decimal(2.0)
+    b1 = Decimal(a * b).sqrt()
+    t1 = t - p * (a - a1) ** Decimal(2)
+    p1 = Decimal(2.0) * p
 
     a = a1
     b = b1
     t = t1
     p = p1
 
-    print((a + b) **2 / 4.0 / t)
+    print((a + b) ** Decimal(2) / Decimal(4.0) / t)
