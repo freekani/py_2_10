@@ -14,7 +14,7 @@ p = Decimal(1.0)
 print("checkpoint1")
 
 starttime = time.clock()
-for i in range(int(math.log2(n))*2):  # log2(桁数)回より多めに繰り返しましょう
+for i in range(int(math.log2(n))+2):  # log2(桁数)回より多めに繰り返しましょう
     print("%d回目の試行中" % i)
     a1 = (a + b) / Decimal(2.0)
     b1 = Decimal(a * b).sqrt()
