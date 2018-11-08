@@ -1,6 +1,9 @@
-from decimal import *
+import math
 import time
-getcontext().prec = 5000    #ここで桁数を調整
+from decimal import *
+
+n = 5000
+getcontext().prec = n  # ここで桁数を調整
 starttime = time.clock()
 
 a = Decimal(1.0)
@@ -8,7 +11,7 @@ b = Decimal(2.0).sqrt() / Decimal(2.0)
 t = Decimal(0.25)
 p = Decimal(1.0)
 
-for i in range(100):    #log2(桁数)回より多めに繰り返しましょう
+for i in range(int(math.log2(n))*2):  # log2(桁数)回より多めに繰り返しましょう
     a1 = (a + b) / Decimal(2.0)
     b1 = Decimal(a * b).sqrt()
     t1 = t - p * (a - a1) ** Decimal(2)
