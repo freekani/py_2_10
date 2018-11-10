@@ -2,7 +2,9 @@ import math
 import time
 from decimal import *
 
-n = 10**5
+print("桁数を入力")
+m = input(">>")  #入力を要求
+n = int(m)   #整数型に変換
 getcontext().prec = n  # ここで桁数を調整
 print("checkpoint0")
 first = time.clock()
