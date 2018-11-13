@@ -5,6 +5,7 @@ from decimal import *
 print("桁数を入力")
 m = input(">>")  #入力を要求
 n = int(m)   #整数型に変換
+path_w = 'py.txt'
 getcontext().prec = n  # ここで桁数を調整
 print("checkpoint0")
 first = time.clock()
@@ -32,9 +33,12 @@ for i in range(int(math.log2(n))+2):  # log2(桁数)回より多めに繰り返�
 
 
 print("checkpoint2")
-print((a + b) ** Decimal(2) / Decimal(4.0) / t)
+s = (a + b) ** Decimal(2) / Decimal(4.0) / t
 endtime = time.clock()
 
 time = endtime - first
 
+print(s)
+with open(path_w, mode='w') as f:
+    f.write(str(s))
 print("実行時間:%f" % time)
