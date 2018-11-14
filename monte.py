@@ -3,7 +3,7 @@ from decimal import *
 getcontext().prec = 1000
 counter = 0
 
-N = 100000
+N = 100000 #試行回数であって桁数ではない
 for i in range(N):
     x = Decimal(random.random())
     y = Decimal(random.random())
