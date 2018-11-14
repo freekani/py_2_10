@@ -3,8 +3,8 @@ import time
 from decimal import *
 
 print("桁数を入力")
-m = input(">>")  #入力を要求
-n = int(m)   #整数型に変換
+m = input(">>")  # 入力を要求
+n = int(m)  # 整数型に変換
 path_w = 'py.txt'
 getcontext().prec = n  # ここで桁数を調整
 print("checkpoint0")
